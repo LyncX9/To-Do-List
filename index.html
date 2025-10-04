@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber-List | Futuristic To-Do</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header class="header">
+            <h1>Cyber-List</h1>
+            <p>Your Digital Task Manager</p>
+        </header>
+
+        <form class="new-task-form" id="newTaskForm">
+            <input 
+                type="text" 
+                id="taskInput" 
+                placeholder="Initiate a new task..."
+                autocomplete="off"
+            />
+            <button type="submit" id="addTaskBtn" title="Add New Task">
+                <i class="fa-solid fa-plus"></i> Add
+            </button>
+        </form>
+
+        <main class="task-list-container">
+            <div id="taskList">
+                </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
